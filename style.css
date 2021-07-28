@@ -1,0 +1,18 @@
+body {
+  height: 95vh;
+  background-color: yellow;
+}
+h1 {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+.formmm {
+  visibility: hidden;
+  font-size: 30px;
+}
+.formmm1 {
+  display: block;
+  visibility: visible;
+}
