@@ -8,11 +8,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="Logo.png" alt="Aaruush Logo" />
-    <h1>Online</h1>
+    <div class="header">
+      <img src="Logo.png" alt="Aaruush Logo" />
+      <h1>Trapped in a web</h1>
+    </div>
+
+    <div class="clues">
+      <div class="row">
+        <h2>clue 1</h2>
+        <h2>clue 2</h2>
+      </div>
+      <div class="row">
+        <h2>clue 3</h2>
+        <h2>clue 4</h2>
+      </div>
+    </div>
+
     <button class="btn">ANSWER</button>
-    <form action="" class="form formmm">
-      <a href="https://www.google.com/">FORM KA LINK</a>
+    <form class="form form1">
+      <input
+        type="text"
+        autocomplete="off"
+        required
+        name="AaruushID"
+        placeholder="Your Aaruush ID?"
+      />
+      <input
+        type="email"
+        autocomplete="off"
+        required
+        name="Email"
+        placeholder="Your Email ID?"
+      />
+      <input
+        type="text"
+        autocomplete="off"
+        required
+        name="Number"
+        placeholder="Your Contact Number?"
+      />
+      <input
+        type="text"
+        autocomplete="off"
+        required
+        name="answer"
+        placeholder="Your Answer?"
+      />
+
+      <button class="submit-btn">Submit</button>
     </form>
     <script src="script.js"></script>
   </body>

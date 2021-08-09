@@ -1,18 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 body {
-  height: 95vh;
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right bottom, #14ffec, #0d7977);
+}
+.header {
+  display: flex;
 }
 h1 {
   font-size: 50px;
   color: black;
   text-align: center;
   text-transform: uppercase;
+  font-family: "Architects Daughter", cursive;
+  margin: auto;
 }
-.formmm {
-  visibility: hidden;
-  font-size: 30px;
+h2 {
+  font-family: "Architects Daughter", cursive;
+  text-transform: uppercase;
+  font-size: 50px;
 }
-.formmm1 {
-  display: block;
-  visibility: visible;
+.btn {
+  align-self: center;
+  width: 10%;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  width: 40%;
+  align-self: center;
+}
+input {
+  margin-bottom: 20px;
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  resize: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submit-btn {
+  width: 30%;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 }

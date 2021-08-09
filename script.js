@@ -3,13 +3,9 @@
 const form = document.querySelector(".form");
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
-  const answer = prompt("Your answer");
-  if (answer === "ABCD") {
-    form.classList.add("formmm1");
-    form.classList.remove("formmm");
+  if (form.style.opacity === "0") {
+    form.style.opacity = "1";
   } else {
-    alert("Wrong");
-    form.classList.add("formmm");
-    form.classList.remosve("formmm1");
+    form.style.opacity = "0";
   }
 });
