@@ -7,6 +7,13 @@ body {
 }
 .header {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 10%;
 }
 h1 {
   font-size: 50px;
@@ -21,6 +28,7 @@ h2 {
   text-transform: uppercase;
   font-size: 50px;
 }
+
 .btn {
   align-self: center;
   width: 10%;
@@ -45,6 +53,7 @@ h2 {
   width: 40%;
   align-self: center;
 }
+
 input {
   margin-bottom: 20px;
   padding: 10px 12px;
@@ -54,9 +63,25 @@ input {
   resize: none;
 }
 
+.clues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
 .row {
   display: flex;
   justify-content: space-evenly;
+}
+
+.row img {
+  margin: 10px 12px;
+  width: 20%;
+}
+
+.row1 img {
+  width: 30%;
 }
 
 .submit-btn {

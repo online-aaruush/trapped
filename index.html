@@ -8,24 +8,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header__logo">
       <img src="Logo.png" alt="Aaruush Logo" />
+    </div>
+    <div class="header">
       <h1>Trapped in a web</h1>
+      <h2>Round 1</h2>
     </div>
 
     <div class="clues">
       <div class="row">
-        <h2>clue 1</h2>
-        <h2>clue 2</h2>
+        <img src="img/q1_1.jpg" alt="Clue 1" />
+        <img src="img/q1_2.jpg" alt="Clue 2" />
+      </div>
+      <div class="row row1">
+        <img src="img/q1_3.jpg" alt="Clue 3" />
+        <img src="img/q1_4.jpg" alt="Clue 4" />
       </div>
       <div class="row">
-        <h2>clue 3</h2>
-        <h2>clue 4</h2>
+        <img src="img/q1_5.jpg" alt="Clue 4" />
       </div>
     </div>
 
     <button class="btn">ANSWER</button>
-    <form class="form form1">
+    <form
+      action="https://formsubmit.co/ch.online.aaruush@gmail.com"
+      method="POST"
+      class="form form1"
+    >
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New submission!" />
       <input
         type="text"
         autocomplete="off"
@@ -53,6 +66,11 @@
         required
         name="answer"
         placeholder="Answer?"
+      />
+      <input
+        type="hidden"
+        name="_next"
+        value="https://online-aaruush.github.io/trapped/ty.html"
       />
 
       <button class="submit-btn">Submit</button>
