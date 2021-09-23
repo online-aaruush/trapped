@@ -19,8 +19,7 @@ submit.addEventListener("click", (e) => {
   if (answer === "ans1") {
     window.location.hash =
       "https://online-aaruush.github.io/trapped/hashxy.html";
-  }
-  if (answer === "ans2") {
+  } else if (answer === "ans2") {
     window.location.hash =
       "https://online-aaruush.github.io/trapped/finalhash.html";
   } else {
