@@ -9,20 +9,3 @@ btn.addEventListener("click", () => {
     form.style.opacity = "0";
   }
 });
-
-const submit = document.querySelector("#btn-sub");
-
-submit.addEventListener("click", (e) => {
-  e.preventDefault();
-  const answer = document.querySelector("#q").value;
-
-  if (answer === "ans1") {
-    window.location.hash =
-      "https://online-aaruush.github.io/trapped/hashxy.html";
-  } else if (answer === "ans2") {
-    window.location.hash =
-      "https://online-aaruush.github.io/trapped/finalhash.html";
-  } else {
-    alert("Wrong answer, please try again!! :(");
-  }
-});
