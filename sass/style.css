@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,7 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 10vh;
 }
 
 .header__logo {
@@ -54,7 +56,7 @@ h1 {
   background-image: url("../img/bg3.jpg");
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -76,13 +78,18 @@ h1 {
 
 .btn {
   align-self: center;
-  width: 10%;
   padding: 10px 12px;
+  width: 10%;
   border-radius: 15px;
   border: 2px solid transparent;
   transform: translateY(0);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
   transition: all 0.2s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
 }
 
 .btn:active {
@@ -103,7 +110,6 @@ h1 {
 .form {
   margin-top: 4rem;
   display: flex;
-  opacity: 0;
   flex-direction: column;
   width: 40%;
   align-self: center;
