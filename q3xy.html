@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trapped in a Web</title>
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="shortcut icon" href="img/online.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__logo">
+        <img src="img/logo.png" alt="Aaruush Logo" />
+      </div>
+      <div class="header__title">
+        <h2>Trapped in a web</h2>
+      </div>
+    </div>
+
+    <section class="clues">
+      <div class="clues__row">
+        <div class="clue">
+          <img src="img/q3/1.jpg" alt="CLUE" />
+        </div>
+        <div class="clue">
+          <img src="img/q3/2.jpg" alt="CLUE" />
+        </div>
+      </div>
+      <div class="clues__row">
+        <div class="clue">
+          <img src="img/q3/3.jpg" alt="CLUE" />
+        </div>
+        <div class="clue">
+          <img src="img/q3/4.png" alt="CLUE" />
+        </div>
+      </div>
+      <a class="btn" href="#answer">ANSWER</a>
+    </section>
+
+    <!-- //////
+    //////
+    Form
+    //////
+    ////// -->
+
+    <section id="answer" class="answer">
+      <!-- <button class="btn">ANSWER</button> -->
+      <form
+        action="https://formsubmit.co/ch.online.aaruush@gmail.com"
+        method="POST"
+        class="form form1"
+      >
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New submission for Round 1 Q3"
+        />
+        <input
+          type="text"
+          autocomplete="off"
+          required
+          name="AaruushID"
+          placeholder="Aaruush ID?"
+        />
+        <input
+          type="email"
+          autocomplete="off"
+          required
+          name="Email"
+          placeholder="Email ID?"
+        />
+        <input
+          type="text"
+          autocomplete="off"
+          required
+          name="Number"
+          placeholder="Contact Number?"
+        />
+        <input
+          type="text"
+          autocomplete="off"
+          required
+          name="answer"
+          placeholder="Answer?"
+        />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://online-trapped.netlify.app/ty.html"
+        />
+
+        <button class="submit-btn">Submit</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
