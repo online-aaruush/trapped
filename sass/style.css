@@ -11,6 +11,30 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -52,6 +76,15 @@ h1 {
   letter-spacing: 0.5rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .header {
+    flex-direction: column;
+  }
+  .header__logo img {
+    display: none;
+  }
+}
+
 .clues {
   background-image: url("../img/bg3.jpg");
   background-size: cover;
@@ -73,7 +106,26 @@ h1 {
   border: 4px solid blanchedalmond;
   border-radius: 2px;
   width: 30rem;
-  height: 30rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .clues {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .clues__row {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+  .clues__row .clue img {
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+  }
 }
 
 .btn {
@@ -95,6 +147,12 @@ h1 {
 .btn:active {
   transform: translateY(10px);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 75em) {
+  .btn {
+    padding: 1rem 2rem;
+  }
 }
 
 .answer {
@@ -131,6 +189,17 @@ h1 {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 }
 
+@media only screen and (max-width: 75em) {
+  .form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .form input {
+    width: 80%;
+  }
+}
+
 input {
   margin-bottom: 2rem;
   padding: 10px 12px;
@@ -138,6 +207,12 @@ input {
   outline: none;
   border-radius: 15px;
   resize: none;
+}
+
+@media only screen and (max-width: 75em) {
+  input {
+    width: 80%;
+  }
 }
 
 .message {
