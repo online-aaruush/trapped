@@ -126,6 +126,10 @@ h1 {
     height: auto;
     margin-top: 1rem;
   }
+  .clues__row .clue audio {
+    width: 70%;
+    margin-top: 1rem;
+  }
 }
 
 .btn {
